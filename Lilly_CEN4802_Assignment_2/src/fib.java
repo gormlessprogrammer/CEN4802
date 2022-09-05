@@ -15,7 +15,16 @@ public class fib {
 		System.out.println("The " + fibInput + "th term of the fibonacci sequence is " +  fib(fibInput));
 	}
 
-	// a recursive fibonnaci method that takes the fibInput from main.
+	/**
+	 * Returns the nth term in the fibonacci sequence. The fibInput is an integer
+	 * taken from the main method which can be defined by the user. If the number is
+	 * less than one, the base case will simply return the fibInput. Above that,
+	 * recursion using the fib method is used.
+	 * 
+	 * @author	Trevor L
+	 * @param	fibInput an integer that represents the nth term of the fibonacci sequence.
+	 * @return	returns either the base case (itself) or the nth term of the fibonacci sequence.
+	 */
 	public static int fib(int fibInput) {
 		if (fibInput <= 1 )
 			return fibInput;
